@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LLM Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 40px auto;
+        }
+        #chat {
+            border: 1px solid #ccc;
+            padding: 10px;
+            height: 400px;
+            overflow-y: auto;
+        }
+        .user { color: blue; margin: 5px 0; }
+        .bot { color: green; margin: 5px 0; }
+        input {
+            width: 80%;
+            padding: 10px;
+        }
+        button {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>🤖 LLM Chatbot</h2>
+
+<div id="chat"></div>
+
+<br>
+
+<input id="prompt" type="text" placeholder="Type your message..." />
+<button onclick="sendMessage()">Send</button>
+
+<script src="/static/chat.js"></script>
+</body>
+</html>
